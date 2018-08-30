@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace WordChecker
 {
@@ -9,7 +6,7 @@ namespace WordChecker
     {
         static void Main(string[] args)
         {
-
+            Worker.Start();
         }
     }
 }
