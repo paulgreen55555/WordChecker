@@ -16,6 +16,7 @@ namespace WordChecker
             //delete punctuation marks
             string fullClearText = Regex.Replace(fullText, @"[^\w\s\-]", "");
 
+            // text to words list
             List<string> fullWordList = fullClearText.Split(' ').ToList();
 
             // to lower

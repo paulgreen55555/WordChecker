@@ -10,9 +10,9 @@ namespace WordChecker
         static string inputPath = "";
         static string outputPath = "";
 
-        static string[] cmdParams =  CmdWorker.getCMDParametrs();
+        static string[] cmdParams = CmdWorker.getCMDParametrs();
 
-        static private void getFilesPaths()
+        static void getFilesPaths()
         {
             if (cmdParams.Length == 0)
             {
@@ -52,7 +52,14 @@ namespace WordChecker
             {
                 using (StreamReader sr = new StreamReader(inputPath))
                 {
-                    fullText = sr.ReadToEnd();
+                    try
+                    {
+                        fullText = sr.ReadToEnd();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Something wrong with File: " + ex);
+                    }
                 }
             }
 
@@ -65,10 +72,18 @@ namespace WordChecker
             {
                 using (StreamWriter writer = new StreamWriter(outputPath))
                 {
-                    foreach (var el in list)
+                    try
                     {
-                        writer.Write(el + "\n");
+                        foreach (var el in list)
+                        {
+                            writer.Write(el + "\n");
+                        }
                     }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Something wrong with File: " + ex);
+                    }
+                    
                 }
                 if (File.Exists(outputPath)) Console.WriteLine("Success! Result in file " + outputPath);
             } 
