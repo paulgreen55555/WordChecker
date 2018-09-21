@@ -57,20 +57,17 @@ namespace WordChecker
         }
 
 
-
-
-
         public static List<string> VocabularToPresentation(VocabularModel model)
         {
             List<string> result = new List<string>();
 
             foreach (var el in model.Vocabular)
             {
-                result.Add(el.FirstLetter.ToString());
+                result.Add(string.Format("{0}", el.FirstLetter.ToString()));
 
                 foreach (var word in el.Words)
                 {
-                    result.Add(word.Key + " --- " + word.Value);
+                    result.Add(string.Format("{0} --- {1}", word.Key, word.Value) );
                 }
             }
 

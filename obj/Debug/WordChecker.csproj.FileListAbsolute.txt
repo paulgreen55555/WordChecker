@@ -3,3 +3,8 @@ C:\Program Files (x86)\Google\Chrome\Application\67.0.3396.79\WordChecker\bin\De
 C:\Program Files (x86)\Google\Chrome\Application\67.0.3396.79\WordChecker\obj\Debug\WordChecker.csprojResolveAssemblyReference.cache
 C:\Program Files (x86)\Google\Chrome\Application\67.0.3396.79\WordChecker\obj\Debug\WordChecker.exe
 C:\Program Files (x86)\Google\Chrome\Application\67.0.3396.79\WordChecker\obj\Debug\WordChecker.pdb
+D:\Projects\WordChecker\obj\Debug\WordChecker.exe
+D:\Projects\WordChecker\obj\Debug\WordChecker.pdb
+D:\Projects\WordChecker\bin\Debug\WordChecker.exe
+D:\Projects\WordChecker\bin\Debug\WordChecker.pdb
+D:\Projects\WordChecker\obj\Debug\WordChecker.csprojResolveAssemblyReference.cache

@@ -76,7 +76,7 @@ namespace WordChecker
                     {
                         foreach (var el in list)
                         {
-                            writer.Write(el + "\n");
+                            writer.Write(el + "\r\n");
                         }
                     }
                     catch (Exception ex)
